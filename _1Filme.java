@@ -5,8 +5,8 @@ public class _1Filme {
 	String nome;
 	int anoDeLancamento;
 	boolean incluidoNoPlano;
-	double somaDasAvaliacoes;
-	int totalDeAvaliacoes;
+	private double somaDasAvaliacoes;
+	private int totalDeAvaliacoes;
 	int duracaoEmMinutos;
 	
 	void exibeFichaTecnica() {
@@ -22,6 +22,20 @@ public class _1Filme {
 	double pegaMedia() {
 		return somaDasAvaliacoes / totalDeAvaliacoes;
 	}
+	
+	int getTotalDeAvaliacoes() {
+		return totalDeAvaliacoes;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public void setAnoDeLancamento(int anoDeLancamento) {
+		this.anoDeLancamento = anoDeLancamento;
+	}
+	
+	
 	
 }
 
